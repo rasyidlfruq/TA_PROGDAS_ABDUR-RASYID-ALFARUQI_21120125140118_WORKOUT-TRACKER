@@ -27,7 +27,7 @@ public class MainApp extends JFrame {
     private RoundedScrollPane scrollPane;
     private JLabel[] labels = new JLabel[4];
 
-    private Stack<AngkatBeban> dataLatihan = new Stack<>();
+    private Stack<AngkatBeban> dataLatihan = new Stack<>(); //Struktur Data (Modul 7)
     private boolean isDarkMode = false;
 
     // --- PALET WARNA MONOKROM ---
@@ -151,7 +151,7 @@ public class MainApp extends JFrame {
 
     private void updateData() {
         int selectedRow = table.getSelectedRow();
-        if (selectedRow < 0) {
+        if (selectedRow < 0) { //Pengkondisian (Modul 2)
             JOptionPane.showMessageDialog(this, "Pilih baris dulu!"); return;
         }
         if (!validasiInput()) return;
@@ -210,7 +210,7 @@ public class MainApp extends JFrame {
 
     private void hitungStatistik() {
         double total = 0;
-        for (AngkatBeban ab : dataLatihan) total += ab.hitungVolume();
+        for (AngkatBeban ab : dataLatihan) total += ab.hitungVolume(); //Perulangan (Modul 3)
         lblTotalVolume.setText("TOTAL VOLUME: " + total + " KG");
     }
 

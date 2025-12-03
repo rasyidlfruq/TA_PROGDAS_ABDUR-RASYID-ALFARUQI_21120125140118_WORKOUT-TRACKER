@@ -50,7 +50,7 @@ public class SplashScreen extends JWindow {
         content.setOpaque(false);
         setContentPane(content);
 
-        JLabel lblTitle = new JLabel("STICKMAN WORKOUT", SwingConstants.CENTER);
+        JLabel lblTitle = new JLabel("WORKOUT TRACKER", SwingConstants.CENTER);
         lblTitle.setFont(new Font("Poppins", Font.BOLD, 24));
         lblTitle.setForeground(Color.BLACK);
         lblTitle.setBounds(0, 190, 450, 40);

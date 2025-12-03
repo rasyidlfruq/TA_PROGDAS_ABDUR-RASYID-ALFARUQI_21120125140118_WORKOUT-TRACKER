@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="tugasakhir2.MainAppForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="651" height="431"/>
+    </constraints>
+    <properties/>
+    <border type="empty" title="Workout Tracker">
+      <size top="30" left="30" bottom="30" right="30"/>
+    </border>
+    <children>
+      <grid id="3137f" binding="panelInput" custom-create="true" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="true" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font/>
+        </properties>
+        <border type="empty">
+          <size top="10" left="10" bottom="10" right="10"/>
+        </border>
+        <children>
+          <component id="e132f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Poppins" size="14" style="0"/>
+              <text value="Nama Gerakan"/>
+            </properties>
+          </component>
+          <component id="f7d3d" class="javax.swing.JTextField" binding="txtNama" custom-create="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Poppins" size="14" style="0"/>
+            </properties>
+          </component>
+          <component id="a70ed" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Poppins" size="14" style="0"/>
+              <text value="Beban (kg)"/>
+            </properties>
+          </component>
+          <component id="b898c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Poppins" size="14" style="0"/>
+              <text value="Set"/>
+            </properties>
+          </component>
+          <component id="83e5b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Poppins" size="14" style="0"/>
+              <text value="Repetisi"/>
+            </properties>
+          </component>
+          <component id="c6aa6" class="javax.swing.JTextField" binding="txtBeban" custom-create="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Poppins" size="14" style="0"/>
+            </properties>
+          </component>
+          <component id="d7174" class="javax.swing.JTextField" binding="txtSet" custom-create="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Poppins" size="14" style="0"/>
+            </properties>
+          </component>
+          <component id="7cccd" class="javax.swing.JTextField" binding="txtRepetisi" custom-create="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Poppins" size="14" style="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="1e444" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="460bd" class="javax.swing.JButton" binding="btnSimpan" custom-create="true">
+            <constraints/>
+            <properties>
+              <font name="Poppins" size="14" style="1"/>
+              <horizontalTextPosition value="11"/>
+              <text value="Simpan"/>
+            </properties>
+          </component>
+          <component id="ca9f0" class="javax.swing.JButton" binding="btnUpdate" custom-create="true">
+            <constraints/>
+            <properties>
+              <font name="Poppins" size="14" style="1"/>
+              <text value="Perbarui"/>
+            </properties>
+          </component>
+          <component id="908d6" class="javax.swing.JButton" binding="btnHapus" custom-create="true">
+            <constraints/>
+            <properties>
+              <font name="Poppins" size="14" style="1"/>
+              <text value="Hapus"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="8b7d9">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Poppins" size="12" style="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="313a1" class="javax.swing.JTable" binding="table">
+            <constraints/>
+            <properties>
+              <font name="Poppins" size="12" style="1"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="7457a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Poppins" size="24" style="1"/>
+          <text value="Workout Tracker"/>
+        </properties>
+      </component>
+      <grid id="190c1" binding="panelTotal" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="empty">
+          <size top="10" left="10" bottom="10" right="10"/>
+        </border>
+        <children>
+          <component id="9d162" class="javax.swing.JLabel" binding="lblTotalVolume">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13947600"/>
+              <enabled value="true"/>
+              <font name="Poppins" size="16" style="1"/>
+              <foreground color="-1"/>
+              <text value="Total Volume: 0 kg"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

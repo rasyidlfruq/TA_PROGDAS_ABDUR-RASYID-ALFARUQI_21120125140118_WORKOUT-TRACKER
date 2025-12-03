@@ -1,4 +1,4 @@
-package tugasakhir2;
+package tugasakhir;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +6,7 @@ import java.awt.geom.RoundRectangle2D;
 import java.io.File;
 
 // [Modul 8] GUI: Menggunakan JWindow (bukan JFrame) agar tidak ada tombol close/minimize bawaan
-public class SplashScreen extends JWindow {
+public class LoadingScreen extends JWindow {
 
     // [Modul 1] Variabel & Tipe Data: Deklarasi komponen GUI dan properti
     private JProgressBar progressBar;
@@ -15,7 +15,7 @@ public class SplashScreen extends JWindow {
     private int radius = 30; // Variabel integer untuk kelengkungan sudut
 
     // [Modul 5] Constructor: Method yang dijalankan saat objek SplashScreen dibuat
-    public SplashScreen() {
+    public LoadingScreen() {
         // Konfigurasi dasar window
         setSize(450, 350);
         setLocationRelativeTo(null); // Posisi tengah layar

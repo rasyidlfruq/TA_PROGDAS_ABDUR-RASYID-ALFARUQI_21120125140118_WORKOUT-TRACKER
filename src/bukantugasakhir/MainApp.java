@@ -1,4 +1,4 @@
-package tugasakhir;
+package bukantugasakhir;
 
 import javax.swing.*;
 import javax.swing.border.AbstractBorder;

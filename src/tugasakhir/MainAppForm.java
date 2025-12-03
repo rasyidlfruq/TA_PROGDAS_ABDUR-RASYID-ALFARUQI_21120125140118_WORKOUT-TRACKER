@@ -1,7 +1,6 @@
-package tugasakhir2;
+package tugasakhir;
 
 import javax.swing.*;
-import javax.swing.border.AbstractBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import java.awt.*;
@@ -48,7 +47,7 @@ public class MainAppForm {
         System.setProperty("swing.aatext", "true");
 
         // Menjalankan Splash Screen terlebih dahulu
-        SplashScreen splash = new SplashScreen();
+        LoadingScreen splash = new LoadingScreen();
         splash.startAnimation();
     }
 

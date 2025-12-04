@@ -129,6 +129,13 @@
               <text value="Hapus"/>
             </properties>
           </component>
+          <component id="509b" class="javax.swing.JButton" binding="btnHapusSemua" custom-create="true">
+            <constraints/>
+            <properties>
+              <font name="Poppins" size="14" style="1"/>
+              <text value="Hapus Semua"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <scrollpane id="8b7d9">

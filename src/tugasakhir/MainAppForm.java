@@ -32,6 +32,7 @@ public class MainAppForm {
     private JButton btnSimpan, btnUpdate, btnHapus;
     private JTable table;
     private JLabel lblTotalVolume;
+    private JButton btnHapusSemua;
     private JScrollPane scrollPane;
     private JLabel lblTitle;
 
@@ -69,6 +70,7 @@ public class MainAppForm {
         btnSimpan.addActionListener(e -> simpanData());
         btnUpdate.addActionListener(e -> updateData());
         btnHapus.addActionListener(e -> hapusData());
+        btnHapusSemua.addActionListener(e -> hapusSemuaData());
 
         // Event Listener untuk klik baris tabel
         table.addMouseListener(new MouseAdapter() {
@@ -126,6 +128,23 @@ public class MainAppForm {
     }
 
     // [Modul 4] Method: Logika untuk menghapus data (DELETE)
+    private void hapusSemuaData() {
+        if (dataLatihan.isEmpty()) {
+            JOptionPane.showMessageDialog(mainPanel, "Data sudah kosong!", "Info", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+        // [Modul 7] Stack: Menghapus data dari memori
+        dataLatihan.clear();
+
+        refreshTable();
+        hitungStatistik();
+        clearInput();
+
+        JOptionPane.showMessageDialog(mainPanel, "Semua data telah dihapus (Reset Berhasil).");
+
+    }
+
+    // [Modul 4] Method: Logika untuk menghapus semua data (DELETE ALL)
     private void hapusData() {
         int row = table.getSelectedRow();
         if (row < 0) {
@@ -257,6 +276,7 @@ public class MainAppForm {
         btnSimpan = new RoundedButton("SIMPAN", Color.BLACK, Color.WHITE);
         btnUpdate = new RoundedButton("PERBARUI", new Color(100, 100, 100), Color.WHITE);
         btnHapus = new RoundedButton("HAPUS", new Color(220, 53, 69), Color.WHITE);
+        btnHapusSemua = new RoundedButton("HAPUS SEMUA", new Color(139, 0, 0), Color.WHITE);
 
         // Input Field Rounded
         txtNama = new RoundedTextField(15);
